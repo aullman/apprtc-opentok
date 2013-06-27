@@ -1,9 +1,6 @@
-TB.setLogLevel(TB.DEBUG);
-
 var $ = function() {
     return document.querySelector.apply(document, arguments);
 };
-
 var $bottomBar = $("#bottomBar"),
     $subscribers = $("#subscribers"),
     $publisher = $("#publisher");
@@ -42,7 +39,6 @@ var subscribeToStreams = function(streams) {
         session.subscribe(stream, stream.streamId);
     }
 };
-
 session.on({
     sessionConnected: function(event){
         subscribeToStreams(event.streams);
