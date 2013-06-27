@@ -1,0 +1,104 @@
+body {
+    background-color: #000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+body a {
+    color: #fff;
+}
+
+#chat {
+    width: 100%;
+    height: calc(100% - 30px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#subscribers {
+    width: 100%;
+    height: 100%;
+}
+
+#bottomBar {
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    background-color: #303030;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#bottomBar > div {
+    display: none;
+}
+
+#bottomBar.full #full {
+    display: block;
+}
+
+#bottomBar.clickAllow #clickAllow {
+    display: block;
+}
+
+#bottomBar.joinLink #joinLink {
+    display: block;
+}
+
+#publisher {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#publisher video {
+    visibility: hidden;
+    opacity: 0;
+    
+    -webkit-transition-property: visibility, opacity;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-property: visibility, opacity;
+    -moz-transition-duration: 2s;
+    -moz-transition-timing-function: ease-out;
+    transition-property: visibility, opacity;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+#publisher.visible video {
+    visibility: visible;
+    opacity: 1;
+}
+
+#chat.connected #publisher {
+    top: calc(100% - 150px);
+    left: calc(100% - 200px);
+    width: 200px !important;
+    height: 150px !important;
+    
+    -webkit-transition-property: top, left, width, height;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-property: top, left, width, height;
+    -moz-transition-duration: 0.5s;
+    -moz-transition-timing-function: ease-out;
+    transition-property: top, left, width, height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+@media all and (max-width: 699px) {
+    #chat.connected #publisher {
+        width: 100px !important;
+        height: 75px !important;
+        top: calc(100% - 75px);
+        left: calc(100% - 100px);
+    }
+        
+}
