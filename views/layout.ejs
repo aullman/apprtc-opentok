@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AppRTC-OpenTok</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://aircnc2-rep.tokbox.com/webrtc/v2.0/js/TB.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/layoutContainer.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var apiKey = "<%= apiKey %>",
+            sessionId = "<%= sessionId %>",
+            token = "<%= token %>";
+    </script>
+  </head>
+  <body>
+    <%- body %>
+    <script src="/javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/resize.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
