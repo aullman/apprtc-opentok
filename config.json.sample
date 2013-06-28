@@ -1,0 +1,4 @@
+{
+    "apiKey": "INSERT OPENTOK API KEY HERE https://dashboard.tokbox.com/signups/new"
+    "apiSecret": "INSERT OPENTOK SECRET HERE"
+}
