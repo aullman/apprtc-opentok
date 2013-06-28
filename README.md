@@ -17,8 +17,9 @@ To setup this app all you need is an OpenTok API Key and Secret. You can sign up
 Then put them into the config.json.sample file and copy the config.json.sample file over to config.json.
 
 Then do the usual node thing.
-
 ``
 npm install
 node app.js
 ``
+
+Have fun!
